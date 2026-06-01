@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendshop - Гаджеттер дүкөнү</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">TRENDSHOP<span>.kg</span></div>
+        <nav>
+            <a href="index.html" class="nav-link active">⚡ Башкы бет</a>
+        </nav>
+        <div class="cart-icon" style="cursor: pointer; position: relative;">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <span class="badge">ЖАҢЫ ТРЕНДДЕР 2026</span>
+            <h1>Келечектин гаджеттери ушул жерде</h1>
+            <p>Кытайдан түз алынып келинген эң актуалдуу аксессуарлар. Жеткирүү 7-15 күн.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="section-title">
+            <h2>🔥 Топ Товарлар</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            </div>
+    </main>
+
+    <div id="cart-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(5, 7, 15, 0.95); z-index: 1000; backdrop-filter: blur(10px); align-items: center; justify-content: center;">
+        <div style="background: #0d1423; border: 1px solid #1e293b; padding: 30px; border-radius: 16px; width: 90%; max-width: 480px; max-height: 80vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            
+            <h3 style="color: #ffffff; margin-bottom: 20px; font-size: 22px; font-weight: 700; border-bottom: 1px solid #1e293b; padding-bottom: 10px;">🛒 Сиздин Корзинаңыз</h3>
+            
+            <div id="cart-items-container" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+                <p id="empty-cart-text" style="color: #64748b; text-align: center; font-style: italic; margin: 20px 0;">Корзинаңыз азырынча бош...</p>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #1e293b; padding-top: 15px; margin-bottom: 20px;">
+                <span style="color: #94a3b8; font-weight: 600;">Жалпы сумма:</span>
+                <span id="cart-total-price" style="color: #00f2fe; font-size: 22px; font-weight: 700;">0 сом</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <button id="whatsapp-order-btn" style="width: 100%; padding: 14px; background: #25D366; border: none; color: white; font-weight: 700; border-radius: 10px; cursor: pointer; font-size: 16px;">
+                    💬 WhatsApp аркылуу заказ берүү
+                </button>
+                <button id="close-cart-btn" style="width: 100%; padding: 12px; background: transparent; border: 1px solid #334155; color: #94a3b8; font-weight: 600; border-radius: 10px; cursor: pointer;">
+                    Терезени жабуу
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Trendshop. Бардык укуктар корголгон. Ош, Kyrgyzstan</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
