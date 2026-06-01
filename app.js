@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // ⚠️ БУЛ ЖЕРГЕ ӨЗҮҢДҮН НОМЕРИҢДИ ЖАЗ
-    const myWhatsAppNumber = "996700123456"; 
+    const myWhatsAppNumber = "996509900172"; 
     
     const firebaseUrl = "https://trendshop-db-default-rtdb.europe-west1.firebasedatabase.app/products.json";
 
